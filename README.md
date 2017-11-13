@@ -1,4 +1,4 @@
-# 3scale-poc
+# api-machine-stacks
 
 A simple flask application. 
 
