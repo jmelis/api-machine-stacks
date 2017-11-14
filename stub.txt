@@ -1,0 +1,41 @@
+1. Relevant packages given english text as input
+
+Type: POST/GET
+Input: [English text] [String/JSON]
+Output: Array of package information [JSON]
+
+[{
+    "name": "package1",
+    "other information1": ""
+}, {
+    "name": "package2",
+    "other information2": ""
+}, {
+    "name": "package3",
+    "other information3": ""
+}]
+
+2. Get relevant packages given a tag as input
+
+Type: GET
+Input: String [Tag word]
+Output: Array of package information [JSON]
+
+[{
+    "name": "package1",
+    "other information1": ""
+}, {
+    "name": "package2",
+    "other information2": ""
+}, {
+    "name": "package3",
+    "other information3": ""
+}]
+
+3. Check if the dependency is valid
+
+Type: POST
+Input: Array of package names [JSON]
+Output: validation informaiton [JSON]
+
+
