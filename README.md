@@ -7,7 +7,7 @@ flask run
 
 to run this application.
  
-### How does it help? 
+### How does it help?  
  
 1. Navigate to http://localhost:5000 once the server is up
 
