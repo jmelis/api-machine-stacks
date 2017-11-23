@@ -5,15 +5,240 @@ Input: [English text] [String/JSON]
 Output: Array of package information [JSON]
 
 [{
-    "name": "package1",
-    "other information1": ""
-}, {
-    "name": "package2",
-    "other information2": ""
-}, {
-    "name": "package3",
-    "other information3": ""
-}]
+            "name": "package1",
+            "insights": {
+                "ecosystem": "maven",
+                "github": {
+                    "contributors": 132,
+                    "dependent_projects": "128",
+                    "dependent_repos": "4.75K",
+                    "first_release_date": "Apr 16, 2010",
+                    "forks_count": 1250,
+                    "issues": {
+                        "month": {
+                            "closed": -1,
+                            "opened": -1
+                        },
+                        "year": {
+                            "closed": -1,
+                            "opened": -1
+                        }
+                    },
+                    "latest_release_duration": "2017-08-07 00:00:00",
+                    "pull_requests": {
+                        "month": {
+                            "closed": -1,
+                            "opened": -1
+                        },
+                        "year": {
+                            "closed": -1,
+                            "opened": -1
+                        }
+                    },
+                    "size": "4MB",
+                    "stargazers_count": 6747,
+                    "total_releases": "48",
+                    "used_by": [
+                        {
+                            "name": "TechEmpower/FrameworkBenchmarks",
+                            "stars": 2737
+                        },
+                        {
+                            "name": "TechEmpower/FrameworkBenchmarks",
+                            "stars": 2748
+                        },
+                        {
+                            "name": "TechEmpower/FrameworkBenchmarks",
+                            "stars": 2749
+                        },
+                        {
+                            "name": "TechEmpower/FrameworkBenchmarks",
+                            "stars": 2757
+                        },
+                        {
+                            "name": "TechEmpower/FrameworkBenchmarks",
+                            "stars": 2772
+                        },
+                        {
+                            "name": "TechEmpower/FrameworkBenchmarks",
+                            "stars": 2783
+                        },
+                        {
+                            "name": "TechEmpower/FrameworkBenchmarks",
+                            "stars": 2787
+                        },
+                        {
+                            "name": "apiman/apiman",
+                            "stars": 314
+                        },
+                        {
+                            "name": "apiman/apiman",
+                            "stars": 317
+                        },
+                        {
+                            "name": "apiman/apiman",
+                            "stars": 318
+                        },
+                        {
+                            "name": "apiman/apiman",
+                            "stars": 320
+                        },
+                        {
+                            "name": "boonproject/boon",
+                            "stars": 472
+                        },
+                        {
+                            "name": "boonproject/boon",
+                            "stars": 473
+                        },
+                        {
+                            "name": "isaiah/jubilee",
+                            "stars": 341
+                        },
+                        {
+                            "name": "isaiah/jubilee",
+                            "stars": 342
+                        },
+                        {
+                            "name": "jbosstm/narayana",
+                            "stars": 71
+                        },
+                        {
+                            "name": "jbosstm/narayana",
+                            "stars": 72
+                        },
+                        {
+                            "name": "jbosstm/narayana",
+                            "stars": 73
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1748
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1758
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1759
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1770
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1771
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1779
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1782
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1784
+                        },
+                        {
+                            "name": "nodyn/nodyn",
+                            "stars": 708
+                        },
+                        {
+                            "name": "nodyn/nodyn",
+                            "stars": 709
+                        },
+                        {
+                            "name": "vert-x3/vertx-stack",
+                            "stars": 70
+                        },
+                        {
+                            "name": "vert-x3/vertx-stack",
+                            "stars": 71
+                        },
+                        {
+                            "name": "vert-x3/vertx-stack",
+                            "stars": 72
+                        },
+                        {
+                            "name": "wildfly-swarm/wildfly-swarm",
+                            "stars": 156
+                        },
+                        {
+                            "name": "wildfly-swarm/wildfly-swarm",
+                            "stars": 159
+                        },
+                        {
+                            "name": "wildfly-swarm/wildfly-swarm",
+                            "stars": 160
+                        },
+                        {
+                            "name": "wildfly-swarm/wildfly-swarm",
+                            "stars": 163
+                        },
+                        {
+                            "name": "wildfly-swarm/wildfly-swarm",
+                            "stars": 173
+                        },
+                        {
+                            "name": "wildfly-swarm/wildfly-swarm",
+                            "stars": 174
+                        },
+                        {
+                            "name": "wildfly-swarm/wildfly-swarm",
+                            "stars": 177
+                        },
+                        {
+                            "name": "wisdom-framework/wisdom",
+                            "stars": 70
+                        }
+                    ],
+                    "watchers": 1673
+                },
+                "latest_version": "3.5.0.Beta1",
+                "license_analysis": {
+                    "_message": "Some unknown licenses found",
+                    "_representative_licenses": null,
+                    "conflict_licenses": [],
+                    "outlier_licenses": [],
+                    "status": "Unknown",
+                    "synonyms": {
+                        "Apache 2.0": "apache 2.0",
+                        "EPL 1.0": "EPL 1.0",
+                        "MIT License": "mit"
+                    },
+                    "unknown_licenses": [
+                        "EPL 1.0"
+                    ]
+                },
+                "licenses": [
+                    "Apache 2.0",
+                    "EPL 1.0",
+                    "MIT License"
+                ],
+                "name": "io.vertx:vertx-core",
+                "osio_user_count": [
+                    6
+                ],
+                "security": [],
+                "topic_list": [
+                    "reactive",
+                    "concurrency",
+                    "non-blocking",
+                    "event-loop"
+                ],
+                "version": "3.4.2"
+            }
+        }, {
+            "name": "package2",
+            "insights": ""
+        }, {
+            "name": "package3",
+            "insights": ""
+        }]
 
 2. Get relevant packages given a tag as input
 
@@ -22,15 +247,240 @@ Input: String [Tag word]
 Output: Array of package information [JSON]
 
 [{
-    "name": "package1",
-    "other information1": ""
-}, {
-    "name": "package2",
-    "other information2": ""
-}, {
-    "name": "package3",
-    "other information3": ""
-}]
+            "name": "package1",
+            "insights": {
+                "ecosystem": "maven",
+                "github": {
+                    "contributors": 132,
+                    "dependent_projects": "128",
+                    "dependent_repos": "4.75K",
+                    "first_release_date": "Apr 16, 2010",
+                    "forks_count": 1250,
+                    "issues": {
+                        "month": {
+                            "closed": -1,
+                            "opened": -1
+                        },
+                        "year": {
+                            "closed": -1,
+                            "opened": -1
+                        }
+                    },
+                    "latest_release_duration": "2017-08-07 00:00:00",
+                    "pull_requests": {
+                        "month": {
+                            "closed": -1,
+                            "opened": -1
+                        },
+                        "year": {
+                            "closed": -1,
+                            "opened": -1
+                        }
+                    },
+                    "size": "4MB",
+                    "stargazers_count": 6747,
+                    "total_releases": "48",
+                    "used_by": [
+                        {
+                            "name": "TechEmpower/FrameworkBenchmarks",
+                            "stars": 2737
+                        },
+                        {
+                            "name": "TechEmpower/FrameworkBenchmarks",
+                            "stars": 2748
+                        },
+                        {
+                            "name": "TechEmpower/FrameworkBenchmarks",
+                            "stars": 2749
+                        },
+                        {
+                            "name": "TechEmpower/FrameworkBenchmarks",
+                            "stars": 2757
+                        },
+                        {
+                            "name": "TechEmpower/FrameworkBenchmarks",
+                            "stars": 2772
+                        },
+                        {
+                            "name": "TechEmpower/FrameworkBenchmarks",
+                            "stars": 2783
+                        },
+                        {
+                            "name": "TechEmpower/FrameworkBenchmarks",
+                            "stars": 2787
+                        },
+                        {
+                            "name": "apiman/apiman",
+                            "stars": 314
+                        },
+                        {
+                            "name": "apiman/apiman",
+                            "stars": 317
+                        },
+                        {
+                            "name": "apiman/apiman",
+                            "stars": 318
+                        },
+                        {
+                            "name": "apiman/apiman",
+                            "stars": 320
+                        },
+                        {
+                            "name": "boonproject/boon",
+                            "stars": 472
+                        },
+                        {
+                            "name": "boonproject/boon",
+                            "stars": 473
+                        },
+                        {
+                            "name": "isaiah/jubilee",
+                            "stars": 341
+                        },
+                        {
+                            "name": "isaiah/jubilee",
+                            "stars": 342
+                        },
+                        {
+                            "name": "jbosstm/narayana",
+                            "stars": 71
+                        },
+                        {
+                            "name": "jbosstm/narayana",
+                            "stars": 72
+                        },
+                        {
+                            "name": "jbosstm/narayana",
+                            "stars": 73
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1748
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1758
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1759
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1770
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1771
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1779
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1782
+                        },
+                        {
+                            "name": "jhalterman/failsafe",
+                            "stars": 1784
+                        },
+                        {
+                            "name": "nodyn/nodyn",
+                            "stars": 708
+                        },
+                        {
+                            "name": "nodyn/nodyn",
+                            "stars": 709
+                        },
+                        {
+                            "name": "vert-x3/vertx-stack",
+                            "stars": 70
+                        },
+                        {
+                            "name": "vert-x3/vertx-stack",
+                            "stars": 71
+                        },
+                        {
+                            "name": "vert-x3/vertx-stack",
+                            "stars": 72
+                        },
+                        {
+                            "name": "wildfly-swarm/wildfly-swarm",
+                            "stars": 156
+                        },
+                        {
+                            "name": "wildfly-swarm/wildfly-swarm",
+                            "stars": 159
+                        },
+                        {
+                            "name": "wildfly-swarm/wildfly-swarm",
+                            "stars": 160
+                        },
+                        {
+                            "name": "wildfly-swarm/wildfly-swarm",
+                            "stars": 163
+                        },
+                        {
+                            "name": "wildfly-swarm/wildfly-swarm",
+                            "stars": 173
+                        },
+                        {
+                            "name": "wildfly-swarm/wildfly-swarm",
+                            "stars": 174
+                        },
+                        {
+                            "name": "wildfly-swarm/wildfly-swarm",
+                            "stars": 177
+                        },
+                        {
+                            "name": "wisdom-framework/wisdom",
+                            "stars": 70
+                        }
+                    ],
+                    "watchers": 1673
+                },
+                "latest_version": "3.5.0.Beta1",
+                "license_analysis": {
+                    "_message": "Some unknown licenses found",
+                    "_representative_licenses": null,
+                    "conflict_licenses": [],
+                    "outlier_licenses": [],
+                    "status": "Unknown",
+                    "synonyms": {
+                        "Apache 2.0": "apache 2.0",
+                        "EPL 1.0": "EPL 1.0",
+                        "MIT License": "mit"
+                    },
+                    "unknown_licenses": [
+                        "EPL 1.0"
+                    ]
+                },
+                "licenses": [
+                    "Apache 2.0",
+                    "EPL 1.0",
+                    "MIT License"
+                ],
+                "name": "io.vertx:vertx-core",
+                "osio_user_count": [
+                    6
+                ],
+                "security": [],
+                "topic_list": [
+                    "reactive",
+                    "concurrency",
+                    "non-blocking",
+                    "event-loop"
+                ],
+                "version": "3.4.2"
+            }
+        }, {
+            "name": "package2",
+            "insights": ""
+        }, {
+            "name": "package3",
+            "insights": ""
+        }]
 
 3. Check if the dependency is valid
 
