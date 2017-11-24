@@ -1,0 +1,4 @@
+{
+    "userIntent": ["package1_info", "package2_info", "package3_info"],
+    "packageRecommendation": ["package5_info", "package9_info", "package4_info"]
+}

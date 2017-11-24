@@ -1,14 +1,7 @@
-from flask import Flask
-from flask import Flask, render_template, request, json
-import jwt
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-app = Flask(__name__)
-
-
-@app.route("/")
-def main():
-    return render_template('index.html')
-
+from src import app
 
 if __name__ == "__main__":
     app.run()

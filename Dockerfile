@@ -6,13 +6,11 @@ RUN useradd machine
 RUN yum install -y gcc &&\
     yum install -y epel-release &&\
     yum install -y python34-pip &&\
-    yum install -y redhat-rpm-config gcc libffi-devel python34-devel openssl-devel &&\
+    yum install -y redhat-rpm-config gcc libffi-devel httpd-devel python34-devel openssl-devel &&\
     yum clean all
 
 RUN mkdir -p /machine
 COPY ./ /machine
 WORKDIR /machine
-RUN pip3 install -r requirements.txt &&\
-    pip3 install gunicorn
+RUN pip3 install -r requirements.txt
 CMD ["gunicorn", "app:app"]
-
