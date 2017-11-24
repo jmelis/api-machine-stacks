@@ -5,7 +5,7 @@ import jwt
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route("/test")
 def main():
     return render_template('index.html')
 
