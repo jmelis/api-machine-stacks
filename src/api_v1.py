@@ -57,6 +57,9 @@ class UserIntent(Resource):
 
         if not input_string:
             raise HTTPError(400, error="Expected String in request")
+
+        tags = [w[1:] for w in input_string.split() if w.startswith('@')
+                and len(w) > 2]
     # TODO Implementation of user intent logic
     # currently returning mock response
         return json_response.get('userIntent')

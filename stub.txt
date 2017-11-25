@@ -1,491 +1,165 @@
-1. Relevant packages given english text as input
-
-Type: POST/GET
-Input: [English text] [String/JSON]
-Output: Array of package information [JSON]
-
-[{
-            "name": "package1",
-            "insights": {
-                "ecosystem": "maven",
-                "github": {
-                    "contributors": 132,
-                    "dependent_projects": "128",
-                    "dependent_repos": "4.75K",
-                    "first_release_date": "Apr 16, 2010",
-                    "forks_count": 1250,
-                    "issues": {
-                        "month": {
-                            "closed": -1,
-                            "opened": -1
-                        },
-                        "year": {
-                            "closed": -1,
-                            "opened": -1
-                        }
-                    },
-                    "latest_release_duration": "2017-08-07 00:00:00",
-                    "pull_requests": {
-                        "month": {
-                            "closed": -1,
-                            "opened": -1
-                        },
-                        "year": {
-                            "closed": -1,
-                            "opened": -1
-                        }
-                    },
-                    "size": "4MB",
-                    "stargazers_count": 6747,
-                    "total_releases": "48",
-                    "used_by": [
-                        {
-                            "name": "TechEmpower/FrameworkBenchmarks",
-                            "stars": 2737
-                        },
-                        {
-                            "name": "TechEmpower/FrameworkBenchmarks",
-                            "stars": 2748
-                        },
-                        {
-                            "name": "TechEmpower/FrameworkBenchmarks",
-                            "stars": 2749
-                        },
-                        {
-                            "name": "TechEmpower/FrameworkBenchmarks",
-                            "stars": 2757
-                        },
-                        {
-                            "name": "TechEmpower/FrameworkBenchmarks",
-                            "stars": 2772
-                        },
-                        {
-                            "name": "TechEmpower/FrameworkBenchmarks",
-                            "stars": 2783
-                        },
-                        {
-                            "name": "TechEmpower/FrameworkBenchmarks",
-                            "stars": 2787
-                        },
-                        {
-                            "name": "apiman/apiman",
-                            "stars": 314
-                        },
-                        {
-                            "name": "apiman/apiman",
-                            "stars": 317
-                        },
-                        {
-                            "name": "apiman/apiman",
-                            "stars": 318
-                        },
-                        {
-                            "name": "apiman/apiman",
-                            "stars": 320
-                        },
-                        {
-                            "name": "boonproject/boon",
-                            "stars": 472
-                        },
-                        {
-                            "name": "boonproject/boon",
-                            "stars": 473
-                        },
-                        {
-                            "name": "isaiah/jubilee",
-                            "stars": 341
-                        },
-                        {
-                            "name": "isaiah/jubilee",
-                            "stars": 342
-                        },
-                        {
-                            "name": "jbosstm/narayana",
-                            "stars": 71
-                        },
-                        {
-                            "name": "jbosstm/narayana",
-                            "stars": 72
-                        },
-                        {
-                            "name": "jbosstm/narayana",
-                            "stars": 73
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1748
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1758
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1759
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1770
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1771
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1779
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1782
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1784
-                        },
-                        {
-                            "name": "nodyn/nodyn",
-                            "stars": 708
-                        },
-                        {
-                            "name": "nodyn/nodyn",
-                            "stars": 709
-                        },
-                        {
-                            "name": "vert-x3/vertx-stack",
-                            "stars": 70
-                        },
-                        {
-                            "name": "vert-x3/vertx-stack",
-                            "stars": 71
-                        },
-                        {
-                            "name": "vert-x3/vertx-stack",
-                            "stars": 72
-                        },
-                        {
-                            "name": "wildfly-swarm/wildfly-swarm",
-                            "stars": 156
-                        },
-                        {
-                            "name": "wildfly-swarm/wildfly-swarm",
-                            "stars": 159
-                        },
-                        {
-                            "name": "wildfly-swarm/wildfly-swarm",
-                            "stars": 160
-                        },
-                        {
-                            "name": "wildfly-swarm/wildfly-swarm",
-                            "stars": 163
-                        },
-                        {
-                            "name": "wildfly-swarm/wildfly-swarm",
-                            "stars": 173
-                        },
-                        {
-                            "name": "wildfly-swarm/wildfly-swarm",
-                            "stars": 174
-                        },
-                        {
-                            "name": "wildfly-swarm/wildfly-swarm",
-                            "stars": 177
-                        },
-                        {
-                            "name": "wisdom-framework/wisdom",
-                            "stars": 70
-                        }
-                    ],
-                    "watchers": 1673
+API-1: Get relevant packages given english text as input
+ENDPOINT: [POST] /api/v1/user-intent
+INPUT: (STRING) English sentence with tags @vertex @web 
+OUTPUT: (JSON) [{
+    "code_metrics": {},
+        "ecosystem": STRING,
+        "github": {
+            "contributors": INTEGER,
+            "dependent_projects": STRING NUMBER,
+            "dependent_repos": STRING NUMBER,
+            "first_release_date": DATE,
+            "forks_count": INTEGER,
+            "issues": {
+                "month": {
+                    "closed": INTEGER,
+                    "opened": INTEGER
                 },
-                "latest_version": "3.5.0.Beta1",
-                "license_analysis": {
-                    "_message": "Some unknown licenses found",
-                    "_representative_licenses": null,
-                    "conflict_licenses": [],
-                    "outlier_licenses": [],
-                    "status": "Unknown",
-                    "synonyms": {
-                        "Apache 2.0": "apache 2.0",
-                        "EPL 1.0": "EPL 1.0",
-                        "MIT License": "mit"
-                    },
-                    "unknown_licenses": [
-                        "EPL 1.0"
-                    ]
+                "year": {
+                    "closed": INTEGER
+                        "opened": INTEGER
+                }
+            },
+            "latest_release_duration": DATE,
+            "open_issues_count": INTEGER,
+            "pull_requests": {
+                "month": {
+                    "closed": INTEGER,
+                    "opened": INTEGER
                 },
-                "licenses": [
-                    "Apache 2.0",
-                    "EPL 1.0",
-                    "MIT License"
-                ],
-                "name": "io.vertx:vertx-core",
-                "osio_user_count": [
-                    6
-                ],
-                "security": [],
-                "topic_list": [
-                    "reactive",
-                    "concurrency",
-                    "non-blocking",
-                    "event-loop"
-                ],
-                "version": "3.4.2"
+                "year": {
+                    "closed": INTEGER,
+                    "opened": INTEGER
+                }
+            },
+            "size": STRING,
+            "stargazers_count": INTEGER,
+            "total_releases": STRING NUMBER,
+            "used_by": [
+            {
+                "name": Repository/Name,
+                "stars": INTEGER
+            },
+            {
+                "name": Repository/Name,
+                "stars": INTEGER
+            },
+                        .
+                        .
+                        .
+            {
+                "name": Repository/Name,
+                "stars": INTEGER
             }
-        }, {
-            "name": "package2",
-            "insights": ""
-        }, {
-            "name": "package3",
-            "insights": ""
-        }]
+            ]
+        },
+        "latest_version": STRING,
+        "license_analysis": {
+            "_message": STRING,
+            "_representative_licenses": STRING,
+            "conflict_licenses": [STRINGS],
+            "outlier_licenses": [STRINGS],
+            "status": STRING,
+            "synonyms": {},
+            "unknown_licenses": [STRINGS]
+        },
+        "licenses": [STRINGS],
+        "name": STRING,
+        "osio_user_count": [INTEGERS],
+        "security": [],
+        "topic_list": [STRINGS],
+        "version": STRING}, . . .
+        ]
 
-2. Get relevant packages given a tag as input
-
-Type: GET
-Input: String [Tag word]
-Output: Array of package information [JSON]
-
-[{
-            "name": "package1",
-            "insights": {
-                "ecosystem": "maven",
-                "github": {
-                    "contributors": 132,
-                    "dependent_projects": "128",
-                    "dependent_repos": "4.75K",
-                    "first_release_date": "Apr 16, 2010",
-                    "forks_count": 1250,
-                    "issues": {
-                        "month": {
-                            "closed": -1,
-                            "opened": -1
-                        },
-                        "year": {
-                            "closed": -1,
-                            "opened": -1
-                        }
-                    },
-                    "latest_release_duration": "2017-08-07 00:00:00",
-                    "pull_requests": {
-                        "month": {
-                            "closed": -1,
-                            "opened": -1
-                        },
-                        "year": {
-                            "closed": -1,
-                            "opened": -1
-                        }
-                    },
-                    "size": "4MB",
-                    "stargazers_count": 6747,
-                    "total_releases": "48",
-                    "used_by": [
-                        {
-                            "name": "TechEmpower/FrameworkBenchmarks",
-                            "stars": 2737
-                        },
-                        {
-                            "name": "TechEmpower/FrameworkBenchmarks",
-                            "stars": 2748
-                        },
-                        {
-                            "name": "TechEmpower/FrameworkBenchmarks",
-                            "stars": 2749
-                        },
-                        {
-                            "name": "TechEmpower/FrameworkBenchmarks",
-                            "stars": 2757
-                        },
-                        {
-                            "name": "TechEmpower/FrameworkBenchmarks",
-                            "stars": 2772
-                        },
-                        {
-                            "name": "TechEmpower/FrameworkBenchmarks",
-                            "stars": 2783
-                        },
-                        {
-                            "name": "TechEmpower/FrameworkBenchmarks",
-                            "stars": 2787
-                        },
-                        {
-                            "name": "apiman/apiman",
-                            "stars": 314
-                        },
-                        {
-                            "name": "apiman/apiman",
-                            "stars": 317
-                        },
-                        {
-                            "name": "apiman/apiman",
-                            "stars": 318
-                        },
-                        {
-                            "name": "apiman/apiman",
-                            "stars": 320
-                        },
-                        {
-                            "name": "boonproject/boon",
-                            "stars": 472
-                        },
-                        {
-                            "name": "boonproject/boon",
-                            "stars": 473
-                        },
-                        {
-                            "name": "isaiah/jubilee",
-                            "stars": 341
-                        },
-                        {
-                            "name": "isaiah/jubilee",
-                            "stars": 342
-                        },
-                        {
-                            "name": "jbosstm/narayana",
-                            "stars": 71
-                        },
-                        {
-                            "name": "jbosstm/narayana",
-                            "stars": 72
-                        },
-                        {
-                            "name": "jbosstm/narayana",
-                            "stars": 73
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1748
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1758
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1759
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1770
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1771
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1779
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1782
-                        },
-                        {
-                            "name": "jhalterman/failsafe",
-                            "stars": 1784
-                        },
-                        {
-                            "name": "nodyn/nodyn",
-                            "stars": 708
-                        },
-                        {
-                            "name": "nodyn/nodyn",
-                            "stars": 709
-                        },
-                        {
-                            "name": "vert-x3/vertx-stack",
-                            "stars": 70
-                        },
-                        {
-                            "name": "vert-x3/vertx-stack",
-                            "stars": 71
-                        },
-                        {
-                            "name": "vert-x3/vertx-stack",
-                            "stars": 72
-                        },
-                        {
-                            "name": "wildfly-swarm/wildfly-swarm",
-                            "stars": 156
-                        },
-                        {
-                            "name": "wildfly-swarm/wildfly-swarm",
-                            "stars": 159
-                        },
-                        {
-                            "name": "wildfly-swarm/wildfly-swarm",
-                            "stars": 160
-                        },
-                        {
-                            "name": "wildfly-swarm/wildfly-swarm",
-                            "stars": 163
-                        },
-                        {
-                            "name": "wildfly-swarm/wildfly-swarm",
-                            "stars": 173
-                        },
-                        {
-                            "name": "wildfly-swarm/wildfly-swarm",
-                            "stars": 174
-                        },
-                        {
-                            "name": "wildfly-swarm/wildfly-swarm",
-                            "stars": 177
-                        },
-                        {
-                            "name": "wisdom-framework/wisdom",
-                            "stars": 70
-                        }
-                    ],
-                    "watchers": 1673
+API-2: Get relevant packages given a tag as input
+ENDPOINT: [GET] /api/v1/package-recommendation/<tag>
+INPUT: NONE
+OUTPUT: (JSON) [{
+    "code_metrics": {},
+        "ecosystem": STRING,
+        "github": {
+            "contributors": INTEGER,
+            "dependent_projects": STRING NUMBER,
+            "dependent_repos": STRING NUMBER,
+            "first_release_date": DATE,
+            "forks_count": INTEGER,
+            "issues": {
+                "month": {
+                    "closed": INTEGER,
+                    "opened": INTEGER
                 },
-                "latest_version": "3.5.0.Beta1",
-                "license_analysis": {
-                    "_message": "Some unknown licenses found",
-                    "_representative_licenses": null,
-                    "conflict_licenses": [],
-                    "outlier_licenses": [],
-                    "status": "Unknown",
-                    "synonyms": {
-                        "Apache 2.0": "apache 2.0",
-                        "EPL 1.0": "EPL 1.0",
-                        "MIT License": "mit"
-                    },
-                    "unknown_licenses": [
-                        "EPL 1.0"
-                    ]
+                "year": {
+                    "closed": INTEGER
+                        "opened": INTEGER
+                }
+            },
+            "latest_release_duration": DATE,
+            "open_issues_count": INTEGER,
+            "pull_requests": {
+                "month": {
+                    "closed": INTEGER,
+                    "opened": INTEGER
                 },
-                "licenses": [
-                    "Apache 2.0",
-                    "EPL 1.0",
-                    "MIT License"
-                ],
-                "name": "io.vertx:vertx-core",
-                "osio_user_count": [
-                    6
-                ],
-                "security": [],
-                "topic_list": [
-                    "reactive",
-                    "concurrency",
-                    "non-blocking",
-                    "event-loop"
-                ],
-                "version": "3.4.2"
+                "year": {
+                    "closed": INTEGER,
+                    "opened": INTEGER
+                }
+            },
+            "size": STRING,
+            "stargazers_count": INTEGER,
+            "total_releases": STRING NUMBER,
+            "used_by": [
+            {
+                "name": Repository/Name,
+                "stars": INTEGER
+            },
+            {
+                "name": Repository/Name,
+                "stars": INTEGER
+            },
+                        .
+                        .
+                        .
+            {
+                "name": Repository/Name,
+                "stars": INTEGER
             }
-        }, {
-            "name": "package2",
-            "insights": ""
-        }, {
-            "name": "package3",
-            "insights": ""
-        }]
+            ]
+        },
+        "latest_version": STRING,
+        "license_analysis": {
+            "_message": STRING,
+            "_representative_licenses": STRING,
+            "conflict_licenses": [STRINGS],
+            "outlier_licenses": [STRINGS],
+            "status": STRING,
+            "synonyms": {},
+            "unknown_licenses": [STRINGS]
+        },
+        "licenses": [STRINGS],
+        "name": STRING,
+        "osio_user_count": [INTEGERS],
+        "security": [],
+        "topic_list": [STRINGS],
+        "version": STRING}, . . .
+        ]
 
-3. Check if the dependency is valid
-
-Type: POST
-Input: Array of package names [JSON]
-Output: validation informaiton [JSON]
-
-
+API-3: Check if the dependency is valid
+ENDPOINT: [POST] /api/v1/dependency-validation
+INPUT: (JSON) 
+        { 
+            "ecosystem": STRING,
+            "packages": [PACKAGE_1, PACKAGE_2... PACKAGE_N]
+        }
+OUTPUT: 
+        If all dependencies is not valid:
+            (JSON) [
+                {
+                    PACKAGE_1: valid/invalid,
+                    PACKAGE_2: valid/invalid,
+                    ...
+                    PACKAGE_N: valid/invalid
+                }
+            ]
+        Else
+            (STRING) pom.xml

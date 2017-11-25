@@ -1,4 +1,1016 @@
 {
-    "userIntent": ["package1_info", "package2_info", "package3_info"],
-    "packageRecommendation": ["package5_info", "package9_info", "package4_info"]
+    "userIntent": [{
+        "code_metrics": {
+            "average_cyclomatic_complexity": 1.33,
+            "code_lines": 82656,
+            "total_files": 446
+        },
+        "ecosystem": "maven",
+        "github": {
+            "contributors": -1,
+            "dependent_projects": "128",
+            "dependent_repos": "4.75K",
+            "first_release_date": "Apr 16, 2010",
+            "forks_count": 1250,
+            "issues": {
+                "month": {
+                    "closed": -1,
+                    "opened": -1
+                },
+                "year": {
+                    "closed": -1,
+                    "opened": -1
+                }
+            },
+            "latest_release_duration": "2017-08-07 00:00:00",
+            "open_issues_count": 166,
+            "pull_requests": {
+                "month": {
+                    "closed": -1,
+                    "opened": -1
+                },
+                "year": {
+                    "closed": -1,
+                    "opened": -1
+                }
+            },
+            "size": "N/A",
+            "stargazers_count": 6747,
+            "total_releases": "48",
+            "used_by": [
+                {
+                    "name": "TechEmpower/FrameworkBenchmarks",
+                    "stars": 2737
+                },
+                {
+                    "name": "TechEmpower/FrameworkBenchmarks",
+                    "stars": 2748
+                },
+                {
+                    "name": "TechEmpower/FrameworkBenchmarks",
+                    "stars": 2749
+                },
+                {
+                    "name": "TechEmpower/FrameworkBenchmarks",
+                    "stars": 2757
+                },
+                {
+                    "name": "TechEmpower/FrameworkBenchmarks",
+                    "stars": 2772
+                },
+                {
+                    "name": "TechEmpower/FrameworkBenchmarks",
+                    "stars": 2783
+                },
+                {
+                    "name": "TechEmpower/FrameworkBenchmarks",
+                    "stars": 2787
+                },
+                {
+                    "name": "apiman/apiman",
+                    "stars": 314
+                },
+                {
+                    "name": "apiman/apiman",
+                    "stars": 317
+                },
+                {
+                    "name": "apiman/apiman",
+                    "stars": 318
+                },
+                {
+                    "name": "apiman/apiman",
+                    "stars": 320
+                },
+                {
+                    "name": "boonproject/boon",
+                    "stars": 472
+                },
+                {
+                    "name": "boonproject/boon",
+                    "stars": 473
+                },
+                {
+                    "name": "isaiah/jubilee",
+                    "stars": 341
+                },
+                {
+                    "name": "isaiah/jubilee",
+                    "stars": 342
+                },
+                {
+                    "name": "jbosstm/narayana",
+                    "stars": 71
+                },
+                {
+                    "name": "jbosstm/narayana",
+                    "stars": 72
+                },
+                {
+                    "name": "jbosstm/narayana",
+                    "stars": 73
+                },
+                {
+                    "name": "jhalterman/failsafe",
+                    "stars": 1748
+                },
+                {
+                    "name": "jhalterman/failsafe",
+                    "stars": 1758
+                },
+                {
+                    "name": "jhalterman/failsafe",
+                    "stars": 1759
+                },
+                {
+                    "name": "jhalterman/failsafe",
+                    "stars": 1770
+                },
+                {
+                    "name": "jhalterman/failsafe",
+                    "stars": 1771
+                },
+                {
+                    "name": "jhalterman/failsafe",
+                    "stars": 1779
+                },
+                {
+                    "name": "jhalterman/failsafe",
+                    "stars": 1782
+                },
+                {
+                    "name": "jhalterman/failsafe",
+                    "stars": 1784
+                },
+                {
+                    "name": "nodyn/nodyn",
+                    "stars": 708
+                },
+                {
+                    "name": "nodyn/nodyn",
+                    "stars": 709
+                },
+                {
+                    "name": "vert-x3/vertx-stack",
+                    "stars": 70
+                },
+                {
+                    "name": "vert-x3/vertx-stack",
+                    "stars": 71
+                },
+                {
+                    "name": "vert-x3/vertx-stack",
+                    "stars": 72
+                },
+                {
+                    "name": "wildfly-swarm/wildfly-swarm",
+                    "stars": 156
+                },
+                {
+                    "name": "wildfly-swarm/wildfly-swarm",
+                    "stars": 159
+                },
+                {
+                    "name": "wildfly-swarm/wildfly-swarm",
+                    "stars": 160
+                },
+                {
+                    "name": "wildfly-swarm/wildfly-swarm",
+                    "stars": 163
+                },
+                {
+                    "name": "wildfly-swarm/wildfly-swarm",
+                    "stars": 173
+                },
+                {
+                    "name": "wildfly-swarm/wildfly-swarm",
+                    "stars": 174
+                },
+                {
+                    "name": "wildfly-swarm/wildfly-swarm",
+                    "stars": 177
+                },
+                {
+                    "name": "wisdom-framework/wisdom",
+                    "stars": 70
+                }
+            ]
+        },
+        "latest_version": "3.5.0.Beta1",
+        "license_analysis": {
+            "_message": "Some unknown licenses found",
+            "_representative_licenses": null,
+            "conflict_licenses": [],
+            "outlier_licenses": [],
+            "status": "Unknown",
+            "synonyms": {
+                "Apache 2.0": "apache 2.0",
+                "EPL 1.0": "EPL 1.0",
+                "MIT License": "mit"
+            },
+            "unknown_licenses": [
+                "EPL 1.0"
+            ]
+        },
+        "licenses": [
+            "Apache 2.0",
+            "EPL 1.0",
+            "MIT License"
+        ],
+        "name": "io.vertx:vertx-core",
+        "osio_user_count": [
+            6
+        ],
+        "security": [],
+        "topic_list": [
+            "http",
+            "socket",
+            "cluster",
+            "tcp"
+        ],
+        "version": "3.4.2"},
+        {
+            "code_metrics": {
+                "average_cyclomatic_complexity": 1.23,
+                "code_lines": 38271,
+                "total_files": 240
+            },
+            "ecosystem": "maven",
+            "github": {
+                "contributors": -1,
+                "dependent_projects": "14",
+                "dependent_repos": "737",
+                "first_release_date": "Apr 16, 2010",
+                "forks_count": -1,
+                "issues": {
+                    "month": {
+                        "closed": -1,
+                        "opened": -1
+                    },
+                    "year": {
+                        "closed": -1,
+                        "opened": -1
+                    }
+                },
+                "latest_release_duration": "2017-06-14 00:00:00",
+                "open_issues_count": -1,
+                "pull_requests": {
+                    "month": {
+                        "closed": -1,
+                        "opened": -1
+                    },
+                    "year": {
+                        "closed": -1,
+                        "opened": -1
+                    }
+                },
+                "size": "N/A",
+                "stargazers_count": -1,
+                "total_releases": "15",
+                "used_by": [
+                    {
+                        "name": "ServiceComb/ServiceComb-Java-Chassis",
+                        "stars": 129
+                    },
+                    {
+                        "name": "ServiceComb/java-chassis",
+                        "stars": 65
+                    },
+                    {
+                        "name": "ServiceComb/java-chassis",
+                        "stars": 66
+                    },
+                    {
+                        "name": "ServiceComb/java-chassis",
+                        "stars": 69
+                    },
+                    {
+                        "name": "TechEmpower/FrameworkBenchmarks",
+                        "stars": 2737
+                    },
+                    {
+                        "name": "TechEmpower/FrameworkBenchmarks",
+                        "stars": 2748
+                    },
+                    {
+                        "name": "TechEmpower/FrameworkBenchmarks",
+                        "stars": 2749
+                    },
+                    {
+                        "name": "TechEmpower/FrameworkBenchmarks",
+                        "stars": 2757
+                    },
+                    {
+                        "name": "TechEmpower/FrameworkBenchmarks",
+                        "stars": 2783
+                    },
+                    {
+                        "name": "amoAHCP/vxms",
+                        "stars": 14
+                    },
+                    {
+                        "name": "apiman/apiman",
+                        "stars": 314
+                    },
+                    {
+                        "name": "apiman/apiman",
+                        "stars": 317
+                    },
+                    {
+                        "name": "apiman/apiman",
+                        "stars": 318
+                    },
+                    {
+                        "name": "mariomac/jeasse",
+                        "stars": 22
+                    },
+                    {
+                        "name": "outofcoffee/imposter",
+                        "stars": 19
+                    },
+                    {
+                        "name": "outofcoffee/imposter",
+                        "stars": 21
+                    },
+                    {
+                        "name": "outofcoffee/imposter",
+                        "stars": 22
+                    },
+                    {
+                        "name": "outofcoffee/imposter",
+                        "stars": 23
+                    },
+                    {
+                        "name": "outofcoffee/imposter",
+                        "stars": 25
+                    },
+                    {
+                        "name": "pac4j/vertx-pac4j",
+                        "stars": 68
+                    },
+                    {
+                        "name": "prometheus/client_java",
+                        "stars": 215
+                    },
+                    {
+                        "name": "prometheus/client_java",
+                        "stars": 222
+                    },
+                    {
+                        "name": "prometheus/client_java",
+                        "stars": 223
+                    },
+                    {
+                        "name": "prometheus/client_java",
+                        "stars": 241
+                    },
+                    {
+                        "name": "prometheus/client_java",
+                        "stars": 246
+                    },
+                    {
+                        "name": "vert-x3/vertx-guide-for-java-devs",
+                        "stars": 50
+                    },
+                    {
+                        "name": "vert-x3/vertx-guide-for-java-devs",
+                        "stars": 52
+                    },
+                    {
+                        "name": "vert-x3/vertx-guide-for-java-devs",
+                        "stars": 56
+                    },
+                    {
+                        "name": "vert-x3/vertx-guide-for-java-devs",
+                        "stars": 63
+                    },
+                    {
+                        "name": "vert-x3/vertx-stack",
+                        "stars": 70
+                    },
+                    {
+                        "name": "vert-x3/vertx-stack",
+                        "stars": 71
+                    },
+                    {
+                        "name": "vert-x3/vertx-stack",
+                        "stars": 72
+                    }
+                ]
+            },
+            "latest_version": "3.4.2",
+            "license_analysis": {
+                "_message": "Some unknown licenses found",
+                "_representative_licenses": null,
+                "conflict_licenses": [],
+                "outlier_licenses": [],
+                "status": "Unknown",
+                "synonyms": {
+                    "Apache 2.0": "apache 2.0",
+                    "EPL 1.0": "EPL 1.0",
+                    "MIT License": "mit"
+                },
+                "unknown_licenses": [
+                    "EPL 1.0"
+                ]
+            },
+            "licenses": [
+                "Apache 2.0",
+                "EPL 1.0",
+                "MIT License"
+            ],
+            "name": "io.vertx:vertx-web",
+            "osio_user_count": [
+                6
+            ],
+            "security": [],
+            "topic_list": [
+                "web",
+                "vertx",
+                "webapp",
+                "webcam"
+            ],
+            "version": "3.4.2"
+        },
+        {
+            "code_metrics": {
+                "average_cyclomatic_complexity": 1.11,
+                "code_lines": 6169,
+                "total_files": 26
+            },
+            "ecosystem": "maven",
+            "github": {
+                "contributors": -1,
+                "dependent_projects": "1",
+                "dependent_repos": "658",
+                "first_release_date": "Apr 16, 2010",
+                "forks_count": -1,
+                "issues": {
+                    "month": {
+                        "closed": -1,
+                        "opened": -1
+                    },
+                    "year": {
+                        "closed": -1,
+                        "opened": -1
+                    }
+                },
+                "latest_release_duration": "2017-06-14 00:00:00",
+                "open_issues_count": -1,
+                "pull_requests": {
+                    "month": {
+                        "closed": -1,
+                        "opened": -1
+                    },
+                    "year": {
+                        "closed": -1,
+                        "opened": -1
+                    }
+                },
+                "size": "N/A",
+                "stargazers_count": -1,
+                "total_releases": "4",
+                "used_by": [
+                    {
+                        "name": "almightytest/test1493407011974",
+                        "stars": 0
+                    },
+                    {
+                        "name": "almightytest/test1493820484985",
+                        "stars": 0
+                    },
+                    {
+                        "name": "boliza/vertx-practice",
+                        "stars": 1
+                    },
+                    {
+                        "name": "ksclarke/jiiify",
+                        "stars": 1
+                    },
+                    {
+                        "name": "mitchharpur/space-a1a",
+                        "stars": 0
+                    },
+                    {
+                        "name": "mitchharpur/space-aa",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osioide-bot/osio-ide",
+                        "stars": 0
+                    },
+                    {
+                        "name": "pie-ai/prometheus-proxy",
+                        "stars": 1
+                    },
+                    {
+                        "name": "qodfathr/trade-insights-service-1",
+                        "stars": 1
+                    },
+                    {
+                        "name": "swagger-api/swagger-codegen",
+                        "stars": 4956
+                    },
+                    {
+                        "name": "vert-x3/vertx-guide-for-java-devs",
+                        "stars": 50
+                    },
+                    {
+                        "name": "vert-x3/vertx-guide-for-java-devs",
+                        "stars": 52
+                    },
+                    {
+                        "name": "vert-x3/vertx-guide-for-java-devs",
+                        "stars": 63
+                    },
+                    {
+                        "name": "vert-x3/vertx-stack",
+                        "stars": 70
+                    },
+                    {
+                        "name": "vert-x3/vertx-stack",
+                        "stars": 72
+                    }
+                ]
+            },
+            "latest_version": "3.4.2",
+            "license_analysis": {
+                "_message": "Some unknown licenses found",
+                "_representative_licenses": null,
+                "conflict_licenses": [],
+                "outlier_licenses": [],
+                "status": "Unknown",
+                "synonyms": {
+                    "Apache 2.0": "apache 2.0",
+                    "EPL 1.0": "EPL 1.0"
+                },
+                "unknown_licenses": [
+                    "EPL 1.0"
+                ]
+            },
+            "licenses": [
+                "Apache 2.0",
+                "EPL 1.0"
+            ],
+            "name": "io.vertx:vertx-web-client",
+            "osio_user_count": [
+                1
+            ],
+            "security": [],
+            "topic_list": [
+                "web",
+                "vertx",
+                "client"
+            ],
+            "version": "3.4.2"
+        },
+        {
+            "code_metrics": {
+                "average_cyclomatic_complexity": -1,
+                "code_lines": -1,
+                "total_files": -1
+            },
+            "ecosystem": "maven",
+            "github": {
+                "contributors": -1,
+                "dependent_projects": "4",
+                "dependent_repos": "37",
+                "first_release_date": "Apr 16, 2010",
+                "forks_count": -1,
+                "issues": {
+                    "month": {
+                        "closed": -1,
+                        "opened": -1
+                    },
+                    "year": {
+                        "closed": -1,
+                        "opened": -1
+                    }
+                },
+                "latest_release_duration": "2017-06-14 00:00:00",
+                "open_issues_count": -1,
+                "pull_requests": {
+                    "month": {
+                        "closed": -1,
+                        "opened": -1
+                    },
+                    "year": {
+                        "closed": -1,
+                        "opened": -1
+                    }
+                },
+                "size": "N/A",
+                "stargazers_count": -1,
+                "total_releases": "4",
+                "used_by": [
+                    {
+                        "name": "CNXTEoE/vertx-lang-scala",
+                        "stars": 1
+                    },
+                    {
+                        "name": "Deutsche-Boerse-Risk/DAVe-StoreManager",
+                        "stars": 0
+                    },
+                    {
+                        "name": "RizkiMufrizal/Belajar-Vertx",
+                        "stars": 0
+                    },
+                    {
+                        "name": "aslakknutsen/vertx-test2",
+                        "stars": 0
+                    },
+                    {
+                        "name": "catrobson/democat002",
+                        "stars": 0
+                    },
+                    {
+                        "name": "catrobson/democat003",
+                        "stars": 0
+                    },
+                    {
+                        "name": "fantasianplus/pokus-vx-confmap",
+                        "stars": 0
+                    },
+                    {
+                        "name": "guloggratis/srvc-google-analytics",
+                        "stars": 0
+                    },
+                    {
+                        "name": "luebken/stpl",
+                        "stars": 1
+                    },
+                    {
+                        "name": "maxandersen/mirror",
+                        "stars": 0
+                    },
+                    {
+                        "name": "mitchharpur/space-1a1",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testaug241503626783046",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testaug271503853750557",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testaug271503858840937",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testaug271503874504021",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testaug311504185285269",
+                        "stars": 0
+                    },
+                    {
+                        "name": "rhoads-zach/demo6282",
+                        "stars": 0
+                    },
+                    {
+                        "name": "rupalibehera/myspace2-1",
+                        "stars": 0
+                    },
+                    {
+                        "name": "rupalibehera/new-space-1-2",
+                        "stars": 0
+                    },
+                    {
+                        "name": "subugoe/fams",
+                        "stars": 0
+                    },
+                    {
+                        "name": "vert-x3/vertx-stack",
+                        "stars": 70
+                    },
+                    {
+                        "name": "vert-x3/vertx-stack",
+                        "stars": 72
+                    }
+                ]
+            },
+            "latest_version": "3.4.2",
+            "license_analysis": {
+                "_message": "Representative license found",
+                "_representative_licenses": "apache 2.0",
+                "conflict_licenses": [],
+                "outlier_licenses": [],
+                "status": "Successful",
+                "synonyms": {
+                    "Apache 2.0": "apache 2.0"
+                },
+                "unknown_licenses": []
+            },
+            "licenses": [
+                "Apache 2.0"
+            ],
+            "name": "io.vertx:vertx-config",
+            "osio_user_count": [
+                1
+            ],
+            "security": [],
+            "topic_list": [
+                "vertx",
+                "config",
+                "application"
+            ],
+            "version": "3.4.2"
+        }
+    ],
+    "packageRecommendation": [
+        {
+            "code_metrics": {
+                "average_cyclomatic_complexity": -1,
+                "code_lines": -1,
+                "total_files": -1
+            },
+            "ecosystem": "maven",
+            "github": {
+                "contributors": -1,
+                "dependent_projects": "0",
+                "dependent_repos": "0",
+                "first_release_date": "Apr 16, 2010",
+                "forks_count": -1,
+                "issues": {
+                    "month": {
+                        "closed": -1,
+                        "opened": -1
+                    },
+                    "year": {
+                        "closed": -1,
+                        "opened": -1
+                    }
+                },
+                "latest_release_duration": "2017-03-15 00:00:00",
+                "open_issues_count": -1,
+                "pull_requests": {
+                    "month": {
+                        "closed": -1,
+                        "opened": -1
+                    },
+                    "year": {
+                        "closed": -1,
+                        "opened": -1
+                    }
+                },
+                "size": "N/A",
+                "stargazers_count": -1,
+                "total_releases": "3",
+                "used_by": [
+                    {
+                        "name": "CNXTEoE/vertx-lang-scala",
+                        "stars": 1
+                    },
+                    {
+                        "name": "DarrenRatcliffe/vertx",
+                        "stars": 0
+                    },
+                    {
+                        "name": "aslakknutsen/vertx-test2",
+                        "stars": 0
+                    },
+                    {
+                        "name": "catrobson/democat002",
+                        "stars": 0
+                    },
+                    {
+                        "name": "catrobson/democat003",
+                        "stars": 0
+                    },
+                    {
+                        "name": "fantasianplus/pokus-vx-confmap",
+                        "stars": 0
+                    },
+                    {
+                        "name": "guloggratis/srvc-google-analytics",
+                        "stars": 0
+                    },
+                    {
+                        "name": "luebken/stpl",
+                        "stars": 1
+                    },
+                    {
+                        "name": "osiotestmachine/testaug241503626783046",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testaug271503874504021",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testaug311504185285269",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testsep111505156756246",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testsep121505229800379",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testsep31504464966701",
+                        "stars": 0
+                    },
+                    {
+                        "name": "rhoads-zach/demo6282",
+                        "stars": 0
+                    },
+                    {
+                        "name": "rupalibehera/myspace2-1",
+                        "stars": 0
+                    },
+                    {
+                        "name": "rupalibehera/new-space-1-2",
+                        "stars": 0
+                    },
+                    {
+                        "name": "vert-x3/vertx-stack",
+                        "stars": 70
+                    },
+                    {
+                        "name": "vert-x3/vertx-stack",
+                        "stars": 72
+                    }
+                ]
+            },
+            "latest_version": "3.4.1",
+            "license_analysis": {
+                "_message": "Input is invalid",
+                "_representative_licenses": null,
+                "conflict_licenses": [],
+                "outlier_licenses": [],
+                "status": "Failure",
+                "synonyms": {},
+                "unknown_licenses": []
+            },
+            "licenses": [],
+            "name": "io.vertx:vertx-config-yaml",
+            "osio_user_count": [
+                1
+            ],
+            "security": [],
+            "topic_list": [
+                "java",
+                "vert.x",
+                "config",
+                "framework"
+            ],
+            "version": "3.4.2"
+        },
+        {
+            "code_metrics": {
+                "average_cyclomatic_complexity": -1,
+                "code_lines": -1,
+                "total_files": -1
+            },
+            "ecosystem": "maven",
+            "github": {
+                "contributors": -1,
+                "dependent_projects": "0",
+                "dependent_repos": "0",
+                "first_release_date": "Apr 16, 2010",
+                "forks_count": -1,
+                "issues": {
+                    "month": {
+                        "closed": -1,
+                        "opened": -1
+                    },
+                    "year": {
+                        "closed": -1,
+                        "opened": -1
+                    }
+                },
+                "latest_release_duration": "2017-03-15 00:00:00",
+                "open_issues_count": -1,
+                "pull_requests": {
+                    "month": {
+                        "closed": -1,
+                        "opened": -1
+                    },
+                    "year": {
+                        "closed": -1,
+                        "opened": -1
+                    }
+                },
+                "size": "N/A",
+                "stargazers_count": -1,
+                "total_releases": "3",
+                "used_by": [
+                    {
+                        "name": "CNXTEoE/vertx-lang-scala",
+                        "stars": 1
+                    },
+                    {
+                        "name": "DarrenRatcliffe/vertx",
+                        "stars": 0
+                    },
+                    {
+                        "name": "aslakknutsen/vertx-test2",
+                        "stars": 0
+                    },
+                    {
+                        "name": "catrobson/democat002",
+                        "stars": 0
+                    },
+                    {
+                        "name": "catrobson/democat003",
+                        "stars": 0
+                    },
+                    {
+                        "name": "fantasianplus/pokus-vx-confmap",
+                        "stars": 0
+                    },
+                    {
+                        "name": "luebken/stpl",
+                        "stars": 1
+                    },
+                    {
+                        "name": "osiotest314/vertxconfigmap",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testaug241503626783046",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testaug271503874504021",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testaug311504185285269",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testsep111505156756246",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testsep121505229800379",
+                        "stars": 0
+                    },
+                    {
+                        "name": "osiotestmachine/testsep31504464966701",
+                        "stars": 0
+                    },
+                    {
+                        "name": "rhoads-zach/demo6282",
+                        "stars": 0
+                    },
+                    {
+                        "name": "rupalibehera/myspace2-1",
+                        "stars": 0
+                    },
+                    {
+                        "name": "rupalibehera/new-space-1-2",
+                        "stars": 0
+                    },
+                    {
+                        "name": "vert-x3/vertx-stack",
+                        "stars": 70
+                    },
+                    {
+                        "name": "vert-x3/vertx-stack",
+                        "stars": 72
+                    }
+                ]
+            },
+            "latest_version": "3.4.1",
+            "license_analysis": {
+                "_message": "Input is invalid",
+                "_representative_licenses": null,
+                "conflict_licenses": [],
+                "outlier_licenses": [],
+                "status": "Failure",
+                "synonyms": {},
+                "unknown_licenses": []
+            },
+            "licenses": [],
+            "name": "io.vertx:vertx-config-kubernetes-configmap",
+            "osio_user_count": [
+                1
+            ],
+            "security": [
+                {
+                    "CVE": "CVE-2016-1905",
+                    "CVSS": "4.0"
+                },
+                {
+                    "CVE": "CVE-2016-1906",
+                    "CVSS": "10.0"
+                }
+            ],
+            "topic_list": [
+                "vertx",
+                "config",
+                "kubernetes"
+            ],
+            "version": "3.4.2"
+        }
+    ]
 }
